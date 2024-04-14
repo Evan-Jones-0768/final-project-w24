@@ -81,25 +81,17 @@ nav {
 }
 
 #try {
-    width: 600px;
-    height: 400px;
+    max-height: 1300px;
     margin-left: 200px;
     margin-right: 200px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-area: 
-    ". i1 i1 ."
-    "i2 i3 i4 i5"
-    "i2 i3 i4 i5"
-    ;
-}  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
-#try .block:nth-child(1) { grid-area: i1; }
-#try .block:nth-child(2) { grid-area: i2; }
-#try .block:nth-child(3) { grid-area: i3; }
-#try .block:nth-child(4) { grid-area: i4; }
-#try .block:nth-child(5) { grid-area: i5; }
+#try div:nth-child(1) {
+    width: 100%;
+}
 
 #try img {
     width: 200px;
