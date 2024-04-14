@@ -28,14 +28,13 @@ p {
 }
 
 #hero {
-    max-height: 700px;
-    display: flex;
-    justify-content: center;
-    align-content: flex-start;
     margin-left: 200px;
     margin-right: 200px;
-    margin-bottom: 30px;;
-    
+    margin-bottom: 30px;
+    max-height: 550px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 #hero img{
@@ -76,9 +75,14 @@ nav {
     margin-top: 20px;
     margin-left: 200px;
     margin-right: 200px;
-    
-
+    display: flex;
 }
+
+#info :nth-child(1){
+    justify-content: center;
+    width: 100%;
+}
+
 
 #try {
     max-height: 1300px;
@@ -90,6 +94,7 @@ nav {
 }
 
 #try div:nth-child(1) {
+    justify-items: center;
     width: 100%;
 }
 
